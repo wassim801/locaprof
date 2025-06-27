@@ -1,0 +1,61 @@
+name: locapro
+description: "A new Flutter project."
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.32.2"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Core packages
+  flutter_secure_storage: ^9.0.0
+  image_picker: ^1.0.4
+  intl: ^0.20.2
+  flutter_dotenv: ^5.1.0
+  http: ^1.1.0
+  path: ^1.8.0
+
+  # UI
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  shimmer: ^2.0.0
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+
+  # Firebase
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.20.0
+  cloud_firestore: ^4.17.5
+  firebase_messaging: ^14.9.4
+  firebase_storage: ^11.7.7
+
+  # URL Handling
+  url_launcher: ^6.1.11
+  url_launcher_web: ^2.0.10
+
+  # Maps
+  google_maps_flutter: ^2.12.3
+  google_maps_flutter_web: ^0.5.4+3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/config/app_config.env
+
+dependency_overrides:
+  analyzer: ^6.1.0
+  analyzer_plugin: ^0.13.4
+  custom_lint_visitor: ^1.0.0+7.4.5
+  meta: ^1.8.0

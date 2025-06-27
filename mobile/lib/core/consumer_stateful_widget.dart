@@ -1,0 +1,1 @@
+// This file is deprecated and no longer needed as we're using ConsumerStatefulWidget directly

@@ -1,0 +1,80 @@
+name: locapro
+description: Application mobile de gestion locative LocaPro
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.32.2'  # Explicit minimum Flutter version
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Design
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  shimmer: ^2.0.0  # Downgraded for stability
+
+  # State Management
+  flutter_riverpod: ^2.4.9  # Aligned with generator
+  riverpod_annotation: ^2.3.3
+
+  # Firebase Ecosystem
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.20.0
+  cloud_firestore: ^4.17.5
+  firebase_messaging: ^14.9.4
+  firebase_storage: ^11.7.7
+
+  # Utilities
+  http: ^1.1.0
+  shared_preferences: ^2.2.2
+  cached_network_image: ^3.3.0
+  intl: ^0.20.2
+  flutter_dotenv: ^5.1.0
+  path: ^1.9.1
+
+  # Location & Maps
+  google_maps_flutter: ^2.5.0
+  geolocator: ^10.1.1  # Downgraded for compatibility
+
+  # Payments
+  flutter_stripe: ^11.5.0
+
+  # Device Features
+  image_picker: ^1.0.4
+  connectivity_plus: ^6.1.4
+  flutter_local_notifications: ^19.3.0
+
+  # Charts
+  fl_chart: ^1.0.0
+
+  # Security
+  flutter_secure_storage: ^9.0.0
+
+  # URL Handling
+  url_launcher: ^6.1.11  # Meta package
+  url_launcher_web: ^2.0.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.8
+
+dependency_overrides:
+  analyzer: ^6.1.0  # Resolves AST conflicts
+  meta: ^1.8.0  # Core dependency alignment
+  firebase_core_platform_interface: ^4.8.0
+  firebase_auth_web: ^5.8.14  # Web-specific override
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - .env
